@@ -12,13 +12,13 @@ type ListaDeFunciones = [Int -> Int]
 type Numero = Int
 type ListaDeNumeros = [Int]
 
-aplicarFunciones :: Numero -> ListaDeFunciones -> ListaDeNumeros
-aplicarFunciones numero listaDeFunciones = map (\f -> f numero) listaDeFunciones 
+aplicarYfiltrar :: Numero -> Numero -> ListaDeFunciones -> ListaDeNumeros
+aplicarYfiltrar numero numeroAevaluar listaDeFunciones = filtrarLosMayoresA (aplicarFunciones numero listaDeFunciones) numeroAevaluar
 
 filtrarLosMayoresA :: ListaDeNumeros -> Numero -> ListaDeNumeros
 filtrarLosMayoresA listaDeNumeros numeroAevaluar = filter (> numeroAevaluar) listaDeNumeros
 
-aplicarYfiltrar :: Numero -> Numero -> ListaDeFunciones -> ListaDeNumeros
-aplicarYfiltrar numero numeroAevaluar listaDeFunciones = filtrarLosMayoresA (aplicarFunciones numero listaDeFunciones) numeroAevaluar
+aplicarFunciones :: Numero -> ListaDeFunciones -> ListaDeNumeros
+aplicarFunciones numero listaDeFunciones = map (\f -> f numero) listaDeFunciones 
 
 -- FINAL 23/02/2019
