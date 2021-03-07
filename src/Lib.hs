@@ -4,7 +4,3 @@ import Data.List
 
 laVerdad = True
 
-
-
-
-
