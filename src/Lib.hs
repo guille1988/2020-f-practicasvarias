@@ -22,3 +22,7 @@ aplicarFunciones :: Numero -> ListaDeFunciones -> ListaDeNumeros
 aplicarFunciones numero listaDeFunciones = map (\f -> f numero) listaDeFunciones 
 
 -- FINAL 23/02/2019
+
+f1 h = any (>15). map h   
+
+fi h = (>0). length. filter (>15) . map h 
