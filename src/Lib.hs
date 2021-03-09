@@ -19,7 +19,7 @@ filtrarLosMayoresA listaDeNumeros numeroAevaluar = filter (> numeroAevaluar) lis
 aplicarFunciones :: Numero -> ListaDeFunciones -> ListaDeNumeros
 aplicarFunciones numero listaDeFunciones = map (\f -> f numero) listaDeFunciones 
 
--- FINAL 23/02/2019
+-- FINAL DICIEMBRE 2020
 
 f1 h = any (>15). map h   
 
