@@ -30,3 +30,20 @@ fi h = (>0). length. filter (>15) . map h
 -- Si le pones la lista [-99,-100..] y de la funcion h es (+1), obviamente nunca va a llegar a un resultado, porque va a seguir evaluando infinitamente. Depende mucho de h tmb.
 -- La segunda función no llega nunca a un resultado ya que ese filter, necesita si o si toda la lista. 
 --3. Las 2 son de orden superior, ya que las 2 son funciones que reciben o entregan funciones.
+
+--FINAL OCTUBRE 2020
+
+f h = (>15). sum. filter h. snd. head
+
+--1. Si es de orden superior ya que toda funcion que recibe o entrega funciones es de orden superior
+--2. Con una lista de tuplas infinitas, se puede terminar de evaluar, ya que solo va a tomar la primer posicion de la misma, gracias a Lazy Evaluation.
+-- con una lista de enteros va a tirar error cuando queres hacerle snd a un numero.
+--3. 
+
+
+
+
+
+
+
+
