@@ -38,7 +38,9 @@ f h = (>15). sum. filter h. snd. head
 --1. Si es de orden superior ya que toda funcion que recibe o entrega funciones es de orden superior
 --2. Con una lista de tuplas infinitas, se puede terminar de evaluar, ya que solo va a tomar la primer posicion de la misma, gracias a Lazy Evaluation.
 -- con una lista de enteros va a tirar error cuando queres hacerle snd a un numero.
---3. 
+--3. La aplicación parcial esta en: f h lista = ((>15). sum. filter h. snd. head) lista, le sacamos el parámetro lista entonces es una función
+-- que esta esperando una lista, que le aplica una composicion de funciones. Las ventajas que aportan son poder crear funciones al vuelo y la 
+-- no repetición de parámetros en la función.
 
 
 
